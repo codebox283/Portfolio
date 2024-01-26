@@ -19,6 +19,7 @@
 
   .logo:hover {
     transform: rotate(90deg);
+    /* cursor: pointer; */
   }
 
   .menu{
@@ -27,11 +28,17 @@
     position:absolute;
     top: 30px;
     right: 30px;
+    /* transition: transform 0.3s ease; */
+  }
+
+  .menu:hover{
+    transform: rotate(180deg);
+    /* cursor: pointer; */
   }
   
   #main-content {
     color: #fff;
-    margin-top: 200px;
+    margin-top: 300px;
     text-align: center;
     color: #FFF;
     text-align: center;
