@@ -14,6 +14,11 @@
     position:absolute;
     top: 30px;
     left: 30px;
+    transition: transform 0.3s ease;
+  }
+
+  .logo:hover {
+    transform: rotate(90deg);
   }
 
   .menu{
@@ -37,3 +42,20 @@
     line-height: normal;
   }
   
+  .main-container h1, h2 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: 2.2s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .main-container h2 {
+    animation-delay: 2.4s;
+  }
