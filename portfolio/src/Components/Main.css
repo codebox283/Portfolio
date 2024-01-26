@@ -1,0 +1,39 @@
+/* Main.css */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 30px;
+    height: 100vh;
+  }
+  
+  .logo {
+    width: 30px; 
+    height: auto; 
+    position:absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .menu{
+    width: 30px; 
+    height: auto; 
+    position:absolute;
+    top: 30px;
+    right: 30px;
+  }
+  
+  #main-content {
+    color: #fff;
+    margin-top: 200px;
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
