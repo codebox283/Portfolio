@@ -25,7 +25,7 @@
   .menu{
     width: 30px; 
     height: auto; 
-    position:absolute;
+    position: fixed;
     top: 30px;
     right: 30px;
     /* transition: transform 0.3s ease; */
@@ -43,13 +43,25 @@
     color: #FFF;
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   }
+
+  #heroh2{
+    font-family: 'Roboto';
+    font-weight: 100;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
   
-  .main-container h1, h2 {
+  #main-content {
+    transition: filter 0s, opacity 0s;
+  }
+  
+  
+  #heroh1, #heroh2 {
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 0.5s forwards;
@@ -63,6 +75,6 @@
     }
   }
   
-  .main-container h2 {
+  #heroh2 {
     animation-delay: 2.4s;
   }
