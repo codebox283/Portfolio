@@ -30,7 +30,7 @@ const Main = () => {
 
     return (
         <>
-            {/* <Loader /> */}
+            <Loader />
 
             <div className="main-container">
                 <img className="logo" src={Logo} />
