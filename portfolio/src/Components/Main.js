@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Loader from './Loader';
 import About from './About';
+import CursorChange from './CursorChange';
 import Logo from '../Assets/Logo.svg';
 import MenuW from '../Assets/MenuW.svg';
 import MenuB from '../Assets/MenuB.svg'
@@ -30,17 +31,19 @@ const Main = () => {
 
     return (
         <>
-            <Loader />
+            {/* <Loader /> */}
 
             <div className="main-container">
-                <img className="logo" src={Logo} />
-                <img className='menu' src={MenuW} style={{ MenuC: MenuC }}/>
+                <img className="logo" alt='' src={Logo} />
+                <img className='menu' alt='' src={MenuW} style={{ MenuC: MenuC }}/>
                 <div id="main-content"
         style={{ opacity: opacity }}>
                     <h1 id='heroh1'>Nakshatra  bandyopadhyay</h1>
                     <h2 id='heroh2'>Web Developer</h2>
                 </div>
             </div>
+
+            <CursorChange />
 
             <About />
 
