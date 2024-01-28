@@ -1,81 +1,82 @@
-/* Main.css */
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    padding: 30px;
-    height: 100vh;
-  }
-  
-  .logo {
-    width: 30px; 
-    height: auto; 
-    position:absolute;
-    top: 30px;
-    left: 30px;
-    transition: transform 0.3s ease;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 30px;
+  height: 100vh;
+}
 
-  .logo:hover {
-    transform: rotate(90deg);
-    /* cursor: pointer; */
-  }
+.logo {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transition: transform 0.3s ease;
+}
 
-  .menu{
-    width: 30px; 
-    height: auto; 
-    /* position: fixed; */
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    /* transition: transform 0.3s ease; */
-  }
+.logo:hover {
+  transform: rotate(90deg);
+  /* cursor: pointer; */
+}
 
-  .menu:hover{
-    transform: rotate(180deg);
-    /* cursor: pointer; */
-  }
-  
-  #main-content {
-    color: #fff;
-    margin-top: 300px;
-    text-align: center;
-    color: #FFF;
-    text-align: center;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+.menu {
+  width: 30px;
+  height: auto;
+  /* position: fixed; */
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  /* transition: transform 0.3s ease; */
+}
 
-  #heroh2{
-    font-family: 'Roboto';
-    font-weight: 100;
-    letter-spacing: 4px;
-    text-transform: uppercase;
+.menu:hover {
+  transform: rotate(180deg);
+  /* cursor: pointer; */
+}
+
+#main-content {
+  color: #fff;
+  margin-top: 300px;
+  text-align: center;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+#heroh2 {
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#main-content {
+  transition: filter 0s, opacity 0s;
+}
+
+
+#heroh1,
+#heroh2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: 2.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  #main-content {
-    transition: filter 0s, opacity 0s;
-  }
-  
-  
-  #heroh1, #heroh2 {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.5s forwards;
-    animation-delay: 2.2s;
-  }
-  
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  #heroh2 {
-    animation-delay: 2.4s;
-  }
+}
+
+#heroh2 {
+  animation-delay: 2.4s;
+}

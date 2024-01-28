@@ -1,30 +1,34 @@
 import React from 'react';
-// import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './About.css';
-import Me from  '../Assets/Me.jpg';
+import Me from '../Assets/Me.jpg';
 
 const About = () => {
 
-
-  //   const [scrollPosition, setScrollPosition] = useState(0);
-
-  // const handleScroll = () => {
-  //   setScrollPosition(window.scrollY);
-  // };
-
   // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
+  //   const handleScroll = () => {
+  //     const h1Element = document.querySelector(".aboutH");
+
+  //     if (h1Element) {
+  //       const bounding = h1Element.getBoundingClientRect();
+  //       if (bounding.top < window.innerHeight * 0.15) {
+  //         h1Element.classList.add("visible");
+  //       }
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+  //   handleScroll(); // Check initial state on mount
+
   //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
+  //     window.removeEventListener("scroll", handleScroll);
   //   };
   // }, []);
 
-  
-  // const opacity = 1 - Math.min(scrollPosition / 500, 1);
 
   return (
-    <div id="container">
-      <h1 id='aboutH'>About  Me</h1>
+    <div id="about-container">
+      <h1 className='aboutH'>About  Me</h1>
       <div id='aboutDiv'>
         <div id='meImg'>
           <img id='meImgI' alt='' src={Me}></img>

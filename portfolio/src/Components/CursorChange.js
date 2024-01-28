@@ -7,10 +7,12 @@ const CursorChange = () => {
 
   const [showCursor, setShowCursor] = useState(false);
   const [buttonVisible, setButtonVisible] = useState(true);
+  const [msgVisible, setMessageVisible] = useState(false);
 
   const handleButtonClick = () => {
     setShowCursor(true);
     setButtonVisible(false);
+    setMessageVisible(true);
     document.body.style.cursor = "none";
   };
 
@@ -28,13 +30,24 @@ const CursorChange = () => {
 
   return (
     <div id="cursor-container">
-      <h1 id="cursor-H">Mmm. Let's get you started</h1>
+      <h1 id="cursor-H">NKSHTR</h1>
       {buttonVisible && (
         <button id="cursor-btn" onClick={handleButtonClick}>
           Click Here
         </button>
       )}
-        {/* <div className="container" ref={container}></div> */}
+      {msgVisible && (
+        <h1 id="cursorH1">
+          Here's your new cursor. Enjoy!
+        </h1>
+      )}
+      {msgVisible && (
+        <h1 id="cursorH2">
+          Hey I'm Nakshatra. <br></br>
+          Wanna know more.. Scroll Down!
+        </h1>
+      )}
+      {/* <div className="container" ref={container}></div> */}
       {showCursor && <Cursor />}
     </div>
   );
