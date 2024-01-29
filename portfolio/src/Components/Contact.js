@@ -49,11 +49,11 @@ const Contact = () => {
                 <ul className="Links">
                     <li>Socials</li>
                     <div className="Line"></div>
-                    <li>LinkedIn</li>
-                    <li>GitHub</li>
-                    <li>Twitter</li>
-                    <li>Instagram</li>
-                    <li>Resume</li>
+                    <li><a href="https://www.linkedin.com/in/nakshatra-bandyopadhyay/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://www.github.com/codebox283" target="_blank">GitHub</a></li>
+                    <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://drive.google.com/file/d/1G6oA7BwMMNlLJhs9ew-zyjOjhpQ-6s5T/view?usp=sharing" target="_blank">Resume</a></li>
                 </ul>
                 <ul></ul>
             </div>
