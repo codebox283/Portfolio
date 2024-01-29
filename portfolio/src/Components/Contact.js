@@ -20,13 +20,23 @@ const Contact = () => {
 
     const formattedTime = `${hours}:${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
 
-    
+    // const [currentUTCTime, setCurrentUTCTime] = useState(new Date());
+
+    // useEffect(() => {
+    //     const intervalId = setInterval(() => {
+    //         setCurrentUTCTime(new Date());
+    //     }, 1000);
+
+    //     return () => clearInterval(intervalId);
+    // }, []);
+
+    // const formattedUTCTime = currentUTCTime.toISOString();
 
 
     return (
         <div id="Contact-container">
-            <h1 id="Contact-banner">Get in touch</h1>
-            <div id="Contact-links">
+            <h1 id="Contact-banner" className='hidden'>Get in touch</h1>
+            <div id="Contact-links" className='hidden'>
                 <ul className="Links">
                     <li>Navigation</li>
                     <div className="Line"></div>
@@ -47,7 +57,7 @@ const Contact = () => {
                 </ul>
                 <ul></ul>
             </div>
-            <div id="Footer">
+            <div id="Footer" className='hidden'>
                 <div id="Copyright">&copy;2024<br></br>NKSHTR</div>
                 <div id="Time"><h1>Local Time</h1><div>{formattedTime}</div></div>
                 <div id="Top"><ScrollLink to="main-container" smooth={true} duration={500}>Top</ScrollLink></div>

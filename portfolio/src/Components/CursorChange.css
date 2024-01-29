@@ -33,7 +33,7 @@
   font-weight: 700;
   transition: 1s;
   position: absolute;
-  bottom: 400px;
+  margin-bottom: -50px;
 }
 
 /* @media (width < 600px) {

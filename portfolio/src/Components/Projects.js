@@ -10,7 +10,7 @@ const Projects = () => {
 
     return(
         <div id='Projects-Container'>
-            <h1 id='projectsh1'>Projects</h1>
+            <h1 id='projectsh1' className='hidden'>Projects</h1>
             <div id='projects'>
                 <div className='img-cont' id='img-cont1'><img className='proj-img' id='img1' src={img1} alt=''></img><h2 className='proj-h'>Project1</h2></div>
                 <div className='img-cont' id='img-cont2'><img className='proj-img' id='img2' src={img2} alt=''></img><h2 className='proj-h'>Project2</h2></div>

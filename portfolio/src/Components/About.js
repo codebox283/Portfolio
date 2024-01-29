@@ -28,7 +28,7 @@ const About = () => {
 
   return (
     <div id="about-container">
-      <h1 className='aboutH'>About  Me</h1>
+      <h1 className='aboutH hidden'>About  Me</h1>
       <div id='aboutDiv'>
         <div id='meImg'>
           <img id='meImgI' alt='' src={Me}></img>

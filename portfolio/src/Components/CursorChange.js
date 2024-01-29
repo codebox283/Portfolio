@@ -32,7 +32,7 @@ const CursorChange = () => {
     <div id="cursor-container">
       <h1 id="cursor-H">NKSHTR</h1>
       {buttonVisible && (
-        <button id="cursor-btn" onClick={handleButtonClick}>
+        <button id="cursor-btn" className='hidden' onClick={handleButtonClick}>
           Click Here
         </button>
       )}
