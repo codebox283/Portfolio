@@ -27,11 +27,20 @@
 }
 
 .img-cont {
-    width: 550px;
-    height: 600px;
     overflow: hidden;
     margin: 20px;
     border-radius: 6px;
+}
+
+#img-cont1, #img-cont4{
+    width: 660px;
+    height: 720px;
+}
+
+#img-cont2, #img-cont3{
+    margin-top: 6%;
+    width: 550px;
+    height: 600px;
 }
 
 .proj-img {

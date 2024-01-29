@@ -7,6 +7,7 @@ import Logo from '../Assets/Logo.svg';
 import MenuW from '../Assets/MenuW.svg';
 import MenuB from '../Assets/MenuB.svg'
 import './Main.css';
+import Contact from './Contact';
 
 const Main = () => {
 
@@ -49,6 +50,8 @@ const Main = () => {
       <About />
 
       <Projects />
+
+      <Contact />
 
     </>
   );
