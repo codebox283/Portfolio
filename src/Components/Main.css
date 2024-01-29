@@ -1,0 +1,95 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 30px;
+  height: 100vh;
+}
+
+.logo {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: rotate(90deg);
+  /* cursor: pointer; */
+}
+
+.menu {
+  width: 30px;
+  height: auto;
+  /* position: fixed; */
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  /* transition: transform 0.3s ease; */
+}
+
+.menu:hover {
+  transform: rotate(180deg);
+  /* cursor: pointer; */
+}
+
+#main-content {
+  color: #fff;
+  margin-top: 300px;
+  text-align: center;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+#heroh2 {
+  font-family: 'Roboto';
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#main-content {
+  transition: filter 0s, opacity 0s;
+}
+
+
+#heroh1,
+#heroh2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.5s forwards;
+  animation-delay: 2.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#heroh2 {
+  animation-delay: 2.4s;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%) ;
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
