@@ -12,15 +12,24 @@ import Contact from './Contact';
 const Main = () => {
 
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
   };
 
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    
     };
   }, []);
 
@@ -62,7 +71,8 @@ const Main = () => {
         </div>
       </div>
 
-      <CursorChange />
+      {screenWidth >= 1200 && <CursorChange className="hidden" />}
+
 
       <About />
 

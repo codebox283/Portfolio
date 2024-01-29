@@ -91,6 +91,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@media (width < 600px){
+    #Copyright{
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 45px;
+    }
+}
+
 #Time{
     text-align: left;
     color: rgb(54, 57, 34);
@@ -137,3 +145,9 @@
       transform: translateY(-20px);
     }
   }
+
+@media (width < 600px){
+    #Top{
+        visibility: hidden;
+    }
+}

@@ -60,13 +60,13 @@
 #cursorH1 {
   position: absolute;
   left: 10vh;
-  top: 300px;
+  top: 250px;
   align-self: flex-start;
 }
 
 #cursorH2 {
   position: absolute;
   right: 10vh;
-  bottom: 300px;
+  bottom: 250px;
   align-self: flex-end;
 }

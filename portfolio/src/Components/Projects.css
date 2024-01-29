@@ -15,8 +15,16 @@
     align-self: flex-start;
     text-transform: uppercase;
     font-size: 70px;
-    font-weight: 800;
     margin-left: 5%;
+    font-weight: 800;
+    transition:  1s ease all;
+}
+
+@media(width < 600px){
+    #projectsh1{
+        font-size: 50px;
+        font-weight: 800;
+    }
 }
 
 #projects {
@@ -30,17 +38,53 @@
     overflow: hidden;
     margin: 20px;
     border-radius: 6px;
+    transition: 1s;
 }
 
 #img-cont1, #img-cont4{
-    width: 660px;
-    height: 720px;
+    width: 50%;
+    height: 47vw;
 }
 
 #img-cont2, #img-cont3{
     margin-top: 6%;
-    width: 550px;
-    height: 600px;
+    width: 40%;
+    height: 39vw;
+}
+
+/* @media (width < 1390px){
+    #img-cont2, #img-cont3{
+        width: 660px;
+        height: 720px;
+    }
+}
+
+@media (width < 840px){
+    #img-cont1, #img-cont2, #img-cont3, #img-cont4{
+        width: 550px;
+        height: 600px;
+    }
+}
+
+@media (width < 700px){
+    #img-cont1, #img-cont2, #img-cont3, #img-cont4{
+        width: 440px;
+        height: 480px;
+    }
+ } */
+
+@media (width < 600px){
+    #img-cont1, #img-cont2, #img-cont3, #img-cont4{
+        width: 330px;
+        height: 360px;
+    }
+}
+ 
+@media (width < 480px){
+    #img-cont1, #img-cont2, #img-cont3, #img-cont4{
+        width: 220px;
+        height: 240px;
+    }
 }
 
 .proj-img {
